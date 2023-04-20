@@ -1,6 +1,8 @@
-import { useState } from "react"
-function LoginPage({setUser}){
-    const [loginAs, setLoginAs] = useState(null)
+import { useContext, useState } from "react"
+import { UserContext } from "../context/userContext"
+function LoginPage(){
+    const {setUser} = useContext(UserContext)
+    const [loginAs, setLoginAs] = useState('')
     return <div >
         UserName:
         <input type="text" value={loginAs} onChange={e=>setLoginAs(e.target.value)}></input>
