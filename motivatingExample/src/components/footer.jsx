@@ -12,11 +12,8 @@ function Footer() {
             }
             {   user ? 
                 <button onClick={_=>setUser(null)}>Logout</button>
-                :null
-                 }
-
+                :null}
         </div>
-
 }
 
 export default Footer
