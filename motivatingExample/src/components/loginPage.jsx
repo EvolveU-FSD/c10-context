@@ -1,6 +1,6 @@
 import { useState } from "react"
 function LoginPage({setUser}){
-    const [loginAs, setLoginAs] = useState(null)
+    const [loginAs, setLoginAs] = useState('')
     return <div >
         UserName:
         <input type="text" value={loginAs} onChange={e=>setLoginAs(e.target.value)}></input>
